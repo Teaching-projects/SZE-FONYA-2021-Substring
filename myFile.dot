@@ -1,0 +1,19 @@
+digraph "MyGraph" { 
+	"State1"[shape=circle,label="State1",fillcolor="#FFFFFF",fontcolor="#000000",style=solid,width=0.50,height=0.50,penwidth=1.50]; 
+	"State2"[shape=circle,label="State2",fillcolor="#FFFFFF",fontcolor="#000000",style=solid,width=0.50,height=0.50,penwidth=1.50]; 
+	"State3"[shape=circle,label="State3",fillcolor="#FFFFFF",fontcolor="#000000",style=solid,width=0.50,height=0.50,penwidth=1.50]; 
+	"State4"[shape=circle,label="State4",fillcolor="#FFFFFF",fontcolor="#000000",style=solid,width=0.50,height=0.50,penwidth=1.50]; 
+	"State5"[shape=circle,label="State5",fillcolor="#FFFFFF",fontcolor="#000000",style=solid,width=0.50,height=0.50,penwidth=1.50]; 
+	"last_State"[shape=doublecircle,label="State6",fillcolor="#FFFFFF",fontcolor="#000000",style=solid,width=0.50,height=0.50,penwidth=1.50]; 
+	"State1" -> "State2"[arrowtail=crow,arrowhead=normal,color="#000000",fontcolor="#000000",label="a",style=solid,penwidth=1.50]; 
+	"State2" -> "State3"[arrowtail=crow,arrowhead=normal,color="#000000",fontcolor="#000000",label="b",style=solid,penwidth=1.50]; 
+	"State3" -> "State4"[arrowtail=crow,arrowhead=normal,color="#000000",fontcolor="#000000",label="b",style=solid,penwidth=1.50]; 
+	"State4" -> "State5"[arrowtail=crow,arrowhead=normal,color="#000000",fontcolor="#000000",label="a",style=solid,penwidth=1.50]; 
+	"State5" -> "last_State"[arrowhead=vee,arrowtail=tee,color="#000000",fontcolor="#000000",label="b",style=solid,penwidth=1.50]; 
+	"State1" -> "State1"[arrowhead=normal,color="#000000",fontcolor="#000000",label="b",style=solid,penwidth=1.50]; 
+	"State2" -> "State2"[arrowhead=normal,color="#000000",fontcolor="#000000",label="a",style=solid,penwidth=1.50]; 
+	"State3" -> "State2"[arrowhead=normal,color="#000000",fontcolor="#000000",label="a",style=solid,penwidth=1.50]; 
+	"State4" -> "State1"[arrowhead=normal,color="#000000",fontcolor="#000000",label="b",style=solid,penwidth=1.50]; 
+	"State5" -> "State2"[arrowhead=normal,color="#000000",fontcolor="#000000",label="a",style=solid,penwidth=1.50]; 
+	"last_State" -> "last_State"[arrowhead=normal,color="#000000",fontcolor="#000000",label="a, b",style=solid,penwidth=1.50]; 
+}
